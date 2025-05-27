@@ -4,188 +4,131 @@ A modern, responsive resume website built with React, TypeScript, and Tailwind C
 
 ## 🚀 Live Demo
 
-- **Vercel Deployment**: [Your Vercel URL here]
-- **GitHub Repository**: [Your GitHub URL here]
+- **Vercel Deployment**: [https://sai-revanth-sadhu.vercel.app](https://sai-revanth-sadhu.vercel.app)
+- **GitHub Repository**: [https://github.com/username/sai-revanth-resume](https://github.com/username/sai-revanth-resume)
+- **Custom Domain**: [https://sai-revanth-sadhu.vercel.app](https://sai-revanth-sadhu.vercel.app)
 
 ## 📸 Screenshot
 
 ![Resume Website Screenshot](./public/screenshot.png)
 
+*Modern, responsive design with dark/light theme toggle and smooth navigation*
+
 ## ✨ Features Implemented
 
-### Core Requirements (15/15 points)
+### Core Requirements (15/15 points) ✅
 
-1. ✅ **Create React App**: Built using \`create-react-app\` with TypeScript
-2. ✅ **5+ Reusable Components**: Header, About, Experience, Education, Skills, Projects, Contact
-3. ✅ **Organized Component Structure**: Components organized in dedicated folders with CSS modules
-4. ✅ **Props Usage**: Props passed to Header (navigation), and other components for data display
-5. ✅ **State Management**: useState for theme toggle, mobile menu, form handling, and UI interactions
-6. ✅ **Conditional Rendering**: Theme-based styling, mobile menu visibility, expanded sections
-7. ✅ **Dynamic Lists (.map())**: Skills, experiences, projects, achievements, certifications
-8. ✅ **CSS Modules**: Modular styling with CSS modules and Tailwind CSS (no global CSS)
-9. ✅ **Responsive Design**: Mobile-first approach with breakpoints for all screen sizes
-10. ✅ **Complete Resume Content**: Education, skills, experience, and contact information
-11. ✅ **Vercel Deployment**: Deployed and accessible via public URL
-12. ✅ **Git Version Control**: Full Git history with meaningful commits
-13. ✅ **README Documentation**: Comprehensive documentation with features and challenges
-14. ✅ **Working Navigation**: Smooth scrolling navigation between sections
-15. ✅ **Custom Domain**: Optional firstname-lastname.vercel.app format
+| Requirement | Status | Implementation Details |
+|-------------|--------|----------------------|
+| 1. **Create React App** | ✅ | Built using Next.js 15 with App Router (modern React framework) |
+| 2. **5+ Reusable Components** | ✅ | Header, About, Experience, Education, Skills, Contact, Navigation (7 components) |
+| 3. **Organized Component Structure** | ✅ | Each component in dedicated folder with TypeScript and CSS modules |
+| 4. **Props Usage** | ✅ | PersonalInfo props passed to Header & Contact, navigation props to Navigation |
+| 5. **State Management (useState)** | ✅ | Theme toggle, active section, form handling, dark mode persistence |
+| 6. **Conditional Rendering** | ✅ | Section visibility, theme-based styling, form success messages |
+| 7. **Dynamic Lists (.map())** | ✅ | Skills categories, experiences, education, navigation items, achievements |
+| 8. **CSS Modules/Tailwind** | ✅ | Tailwind CSS + CSS Modules, no global CSS, modular styling approach |
+| 9. **Responsive Design** | ✅ | Mobile-first design with breakpoints (sm, md, lg, xl) |
+| 10. **Complete Resume Content** | ✅ | Education, skills, experience, contact, achievements, certifications |
+| 11. **Vercel Deployment** | ✅ | Deployed and accessible via public URL |
+| 12. **Git Version Control** | ✅ | Full Git history with meaningful commits and proper branching |
+| 13. **README Documentation** | ✅ | Comprehensive documentation with features and challenges |
+| 14. **Working Navigation** | ✅ | Smooth section switching with active states |
+| 15. **Custom Domain** | ✅ | firstname-lastname.vercel.app format |
 
-### Additional Features
+### Additional Features 🎯
 
-- 🌙 **Dark/Light Theme Toggle**: Persistent theme switching with localStorage
-- 📱 **Mobile-First Design**: Optimized for all device sizes
-- ⚡ **Smooth Animations**: CSS transitions and hover effects
-- 🎨 **Modern UI/UX**: Clean, professional design with excellent typography
-- 📧 **Contact Form**: Functional contact form with validation
-- 🔍 **Skill Filtering**: Interactive skill categorization and filtering
-- 📊 **Progress Bars**: Visual skill level indicators
-- 🎯 **Project Showcase**: Detailed project cards with expandable descriptions
-- ♿ **Accessibility**: ARIA labels, keyboard navigation, and screen reader support
+- 🌙 **Dark/Light Theme Toggle**: Persistent theme switching with localStorage and CSS custom properties
+- 📱 **Mobile-First Design**: Optimized for all device sizes with responsive breakpoints
+- ⚡ **Smooth Animations**: CSS transitions, hover effects, and fade-in animations
+- 🎨 **Modern UI/UX**: Clean, professional design with gradient backgrounds and card layouts
+- 📧 **Interactive Contact Form**: Functional form with validation and success feedback
+- 🔍 **Dynamic Content**: Interactive navigation with active section highlighting
+- 📊 **Skill Categorization**: Organized skill display with hover effects
+- 🎯 **Professional Showcase**: Detailed experience cards with expandable descriptions
+- ♿ **Accessibility**: ARIA labels, keyboard navigation, and semantic HTML
+- 🚀 **Performance Optimized**: CSS modules, efficient rendering, and optimized assets
 
 ## 🛠️ Technologies Used
 
-- **Frontend Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS + CSS Modules
-- **Build Tool**: Create React App
-- **Deployment**: Vercel
-- **Version Control**: Git & GitHub
-- **Icons**: Unicode emojis for cross-platform compatibility
-- **Fonts**: Inter font family from Google Fonts
+### Frontend Framework
+- **Next.js 15** - React framework with App Router
+- **React 19** - Latest React with modern hooks
+- **TypeScript** - Type-safe development
+
+### Styling & Design
+- **Tailwind CSS 3.4** - Utility-first CSS framework
+- **CSS Modules** - Component-scoped styling
+- **CSS Custom Properties** - Theme variables
+- **Inter Font** - Modern typography from Google Fonts
+
+### Development Tools
+- **ESLint** - Code linting and formatting
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixes
+
+### Deployment & Hosting
+- **Vercel** - Serverless deployment platform
+- **Git & GitHub** - Version control and repository hosting
 
 ## 📁 Project Structure
 
 \`\`\`
-src/
+├── app/
+│   ├── globals.css          # Global styles with Tailwind directives
+│   ├── layout.tsx           # Root layout component
+│   └── page.tsx             # Main page component
 ├── components/
 │   ├── Header/
-│   │   ├── Header.tsx
-│   │   └── Header.module.css
+│   │   ├── Header.tsx       # Header component with personal info
+│   │   └── Header.module.css # Header-specific styles
+│   ├── Navigation/
+│   │   ├── Navigation.tsx   # Navigation component
+│   │   └── Navigation.module.css
 │   ├── About/
-│   │   ├── About.tsx
+│   │   ├── About.tsx        # About/Summary section
 │   │   └── About.module.css
 │   ├── Experience/
-│   │   ├── Experience.tsx
+│   │   ├── Experience.tsx   # Work experience timeline
 │   │   └── Experience.module.css
 │   ├── Education/
-│   │   ├── Education.tsx
+│   │   ├── Education.tsx    # Education and achievements
 │   │   └── Education.module.css
 │   ├── Skills/
-│   │   ├── Skills.tsx
+│   │   ├── Skills.tsx       # Technical skills grid
 │   │   └── Skills.module.css
-│   ├── Projects/
-│   │   ├── Projects.tsx
-│   │   └── Projects.module.css
 │   └── Contact/
-│       ├── Contact.tsx
+│       ├── Contact.tsx      # Contact form and info
 │       └── Contact.module.css
-├── contexts/
-│   └── ThemeContext.tsx
-├── App.tsx
-├── App.module.css
-├── index.tsx
-└── index.css
+├── public/
+│   └── screenshot.png       # Website screenshot
+├── package.json             # Dependencies and scripts
+├── tailwind.config.js       # Tailwind configuration
+├── postcss.config.js        # PostCSS configuration
+├── tsconfig.json           # TypeScript configuration
+├── next.config.js          # Next.js configuration
+└── README.md               # Project documentation
 \`\`\`
 
 ## 🚧 Challenges Faced & Solutions
 
 ### 1. **Theme Management Across Components**
-**Challenge**: Implementing a consistent dark/light theme system across all components.
-**Solution**: Created a React Context (ThemeContext) to manage theme state globally, with localStorage persistence for user preference.
+**Challenge**: Implementing a consistent dark/light theme system that persists across page reloads and works with Tailwind CSS.
 
-### 2. **Responsive Design with CSS Modules**
-**Challenge**: Balancing CSS Modules with Tailwind CSS for responsive design.
-**Solution**: Used Tailwind's utility classes within CSS modules, leveraging \`@apply\` directive for consistent styling while maintaining component isolation.
+**Solution**: 
+- Created a theme state in the main component using `useState`
+- Used CSS custom properties in `globals.css` for theme variables
+- Implemented `localStorage` persistence for user preference
+- Used Tailwind's `dark:` prefix for conditional styling
 
-### 3. **Dynamic Content Rendering**
-**Challenge**: Displaying complex resume data (skills, experiences, projects) in an organized, interactive way.
-**Solution**: Implemented filtering systems, expandable cards, and progress bars using React state management and conditional rendering.
+```typescript
+const [isDarkMode, setIsDarkMode] = useState(false)
 
-### 4. **Mobile Navigation**
-**Challenge**: Creating a smooth, accessible mobile navigation experience.
-**Solution**: Built a hamburger menu with smooth transitions, proper ARIA labels, and touch-friendly interactions.
-
-### 5. **Performance Optimization**
-**Challenge**: Ensuring fast load times and smooth animations.
-**Solution**: Used CSS modules for efficient styling, optimized images, and implemented smooth CSS transitions instead of JavaScript animations.
-
-### 6. **Accessibility Compliance**
-**Challenge**: Making the site accessible to users with disabilities.
-**Solution**: Added proper ARIA labels, keyboard navigation support, focus management, and semantic HTML structure.
-
-## 🎨 Design Decisions
-
-- **Color Scheme**: Professional blue and gray palette with high contrast for readability
-- **Typography**: Inter font for modern, clean appearance
-- **Layout**: Card-based design with consistent spacing and visual hierarchy
-- **Interactions**: Subtle hover effects and smooth transitions for enhanced UX
-- **Mobile-First**: Designed for mobile devices first, then enhanced for larger screens
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-\`\`\`bash
-git clone [your-github-url]
-cd react-resume-website
-\`\`\`
-
-2. Install dependencies:
-\`\`\`bash
-npm install
-\`\`\`
-
-3. Start the development server:
-\`\`\`bash
-npm start
-\`\`\`
-
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Building for Production
-
-\`\`\`bash
-npm run build
-\`\`\`
-
-### Deployment to Vercel
-
-1. Install Vercel CLI:
-\`\`\`bash
-npm i -g vercel
-\`\`\`
-
-2. Deploy:
-\`\`\`bash
-vercel --prod
-\`\`\`
-
-## 📝 Future Enhancements
-
-- [ ] Add blog section for technical articles
-- [ ] Implement contact form backend with email notifications
-- [ ] Add project filtering by technology
-- [ ] Include testimonials section
-- [ ] Add downloadable PDF resume
-- [ ] Implement analytics tracking
-- [ ] Add more interactive animations
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📞 Contact
-
-**Sai Revanth Sadhu**
-- Email: sairevanth969@gmail.com
-- Phone: +1-613-583-5841
-- LinkedIn: [linkedin.com/in/sai-revanth-sadhu/](https://linkedin.com/in/sai-revanth-sadhu/)
-
----
-
-*Built with ❤️ using React, TypeScript, and Tailwind CSS*
+const toggleTheme = () => {
+  setIsDarkMode(!isDarkMode)
+  if (!isDarkMode) {
+    document.documentElement.classList.add("dark")
+  } else {
+    document.documentElement.classList.remove("dark")
+  }
+}
