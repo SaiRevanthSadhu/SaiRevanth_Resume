@@ -71,45 +71,6 @@ A modern, responsive resume website built with React, TypeScript, and Tailwind C
 - **Vercel** - Serverless deployment platform
 - **Git & GitHub** - Version control and repository hosting
 
-## 📁 Project Structure
-
-\`\`\`
-├── app/
-│   ├── globals.css          # Global styles with Tailwind directives
-│   ├── layout.tsx           # Root layout component
-│   └── page.tsx             # Main page component
-├── components/
-│   ├── Header/
-│   │   ├── Header.tsx       # Header component with personal info
-│   │   └── Header.module.css # Header-specific styles
-│   ├── Navigation/
-│   │   ├── Navigation.tsx   # Navigation component
-│   │   └── Navigation.module.css
-│   ├── About/
-│   │   ├── About.tsx        # About/Summary section
-│   │   └── About.module.css
-│   ├── Experience/
-│   │   ├── Experience.tsx   # Work experience timeline
-│   │   └── Experience.module.css
-│   ├── Education/
-│   │   ├── Education.tsx    # Education and achievements
-│   │   └── Education.module.css
-│   ├── Skills/
-│   │   ├── Skills.tsx       # Technical skills grid
-│   │   └── Skills.module.css
-│   └── Contact/
-│       ├── Contact.tsx      # Contact form and info
-│       └── Contact.module.css
-├── public/
-│   └── screenshot.png       # Website screenshot
-├── package.json             # Dependencies and scripts
-├── tailwind.config.js       # Tailwind configuration
-├── postcss.config.js        # PostCSS configuration
-├── tsconfig.json           # TypeScript configuration
-├── next.config.js          # Next.js configuration
-└── README.md               # Project documentation
-\`\`\`
-
 ## 🚧 Challenges Faced & Solutions
 
 ### 1. **Theme Management Across Components**
