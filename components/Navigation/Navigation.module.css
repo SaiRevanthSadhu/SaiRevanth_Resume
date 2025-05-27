@@ -1,0 +1,25 @@
+.navigation {
+  @apply bg-card shadow-md sticky top-0 z-50 transition-colors duration-300;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4 flex justify-center gap-8;
+}
+
+.navButton {
+  @apply bg-transparent border-0 py-4 px-6 text-base font-medium text-muted-foreground cursor-pointer transition-all duration-300 border-b-4 border-transparent hover:text-primary;
+}
+
+.navButton.active {
+  @apply text-primary border-primary;
+}
+
+@media (max-width: 768px) {
+  .container {
+    @apply gap-2 overflow-x-auto justify-start;
+  }
+
+  .navButton {
+    @apply py-4 px-4 text-sm whitespace-nowrap;
+  }
+}
