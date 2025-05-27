@@ -8,10 +8,6 @@ A modern, responsive resume website built with React, TypeScript, and Tailwind C
 - **GitHub Repository**: [https://github.com/username/sai-revanth-resume](https://github.com/username/sai-revanth-resume)
 - **Custom Domain**: [https://sai-revanth-sadhu.vercel.app](https://sai-revanth-sadhu.vercel.app)
 
-## 📸 Screenshot
-
-![Resume Website Screenshot](./public/screenshot.png)
-
 *Modern, responsive design with dark/light theme toggle and smooth navigation*
 
 ## ✨ Features Implemented
